@@ -56,8 +56,7 @@ function App() {
       <div className="bg-sky-600 rounded w-[580px] h-[750px] mx-auto">
         <div className="flex flex-row justify-center content-center gap-5 pt-16 pb-4">
           <input type="text" name="searchbar" id="searchbar" className='rounded-full bg-gray-300 px-10 py-5' placeholder='Insira sua cidade'/>
-          <button className='rounded-full bg-white px-8 bg-[url("../public/assets/search.svg
-")] bg-no-repeat bg-center' onClick={()=> {search()}}></button>
+          <button className='rounded-full bg-white px-8 bg-[url("../public/Assets/search.png")] bg-no-repeat bg-center' onClick={()=> {search()}}></button>
         </div>
         <div className="flex justify-center content-center">
           <img src={wicon} alt="" />
