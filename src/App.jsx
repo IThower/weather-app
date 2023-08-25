@@ -33,17 +33,17 @@ function App() {
 
 
     if (data.weather[0].icon === "01d" || data.weather[0].icon === "01n") {
-      setWicon("Assets/clear.png");
+      setWicon("./Assets/clear.png");
   } else if (data.weather[0].icon === "02d" || data.weather[0].icon === "02n") {
-      setWicon("Assets/cloud.png"); // Adicione .png ao caminho da imagem
+      setWicon("./Assets/cloud.png"); // Adicione .png ao caminho da imagem
   } else if (data.weather[0].icon === "03d" || data.weather[0].icon === "03n") {
-      setWicon("Assets/cloud.png"); // Defina um ícone diferente aqui
+      setWicon("./Assets/cloud.png"); // Defina um ícone diferente aqui
   } else if (data.weather[0].icon === "04d" || data.weather.icon === "04n") {
-      setWicon("Assets/cloud.png"); // Defina um ícone diferente aqui
+      setWicon("./Assets/cloud.png"); // Defina um ícone diferente aqui
   } else if (data.weather[0].icon === "09d" || data.weather[0].icon === "09n") {
-      setWicon("Assets/rain.png"); // Adicione .png ao caminho da imagem
+      setWicon("./Assets/rain.png"); // Adicione .png ao caminho da imagem
   } else if (data.weather[0].icon === "10d" || data.weather[0].icon === "10n") {
-      setWicon("Assets/rain.png"); // Adicione .png ao caminho da imagem
+      setWicon("./Assets/rain.png"); // Adicione .png ao caminho da imagem
   }
   else{
     setWicon("Assets/rain.png");
@@ -56,7 +56,7 @@ function App() {
       <div className="bg-sky-600 rounded w-[580px] h-[750px] mx-auto">
         <div className="flex flex-row justify-center content-center gap-5 pt-16 pb-4">
           <input type="text" name="searchbar" id="searchbar" className='rounded-full bg-gray-300 px-10 py-5' placeholder='Insira sua cidade'/>
-          <button className='rounded-full bg-white px-8 bg-[url("Assets/search.png")] bg-no-repeat bg-center' onClick={()=> {search()}}></button>
+          <button className='rounded-full bg-white px-8 bg-[url("./Assets/search.png")] bg-no-repeat bg-center' onClick={()=> {search()}}></button>
         </div>
         <div className="flex justify-center content-center">
           <img src={wicon} alt="" />
